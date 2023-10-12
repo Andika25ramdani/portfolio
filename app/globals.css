@@ -6,22 +6,68 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --app-gray-default: 255 255 255;
+  --app-gray-100: 243 244 246;
+  --app-gray-200: 229 231 235;
+  --app-gray-600: 75 85 99;
+  --app-gray-700: 55 65 81;
+  --app-gray-900: 17 24 39;
+
+  --app-accent-100: 255 198 55;
+  --app-accent-200: 255 180 0;
+  --app-accent-300: 254 205 26;
+  --app-accent-400: 252 179 54;
+  --app-accent-default: var(--app-accent-400);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.dark {
+  --foreground-rgb: 255 255 255;
+  --background-start-rgb: 0 0 0;
+  --background-end-rgb: 0 0 0;
+
+  --app-gray-default: 3 7 18;
+  --app-gray-100: 31 41 55;
+  --app-gray-200: 55 65 81;
+  --app-gray-600: 209 213 219;
+  --app-gray-700: 229 231 235;
+  --app-gray-900: 249 250 251;
+
+  --app-accent-default: var(--app-accent-100);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Header */
+.header {
+  @apply sticky top-0 z-30 w-full border-b border-transparent bg-gray max-md:border-gray-100;
+}
+
+.header-scrolled {
+  @apply bg-gray/50 backdrop-blur-xl md:border-gray-100;
+}
+
+.header-main {
+  @apply mx-auto flex w-full max-w-7xl items-center justify-between px-8;
+}
+
+.header-content {
+  @apply hidden items-center gap-6 md:flex;
+}
+
+.header-menu {
+  @apply flex list-none items-center gap-6;
+}
+
+.header-menu-item {
+  @apply font-semibold text-gray-600 hover:text-gray-900;
+}
+
+.header-drawer-menu {
+  @apply flex list-none flex-col;
+}
+.header-drawer-menu-item {
+  @apply py-3 px-6 hover:bg-gray-100 active:bg-gray-100;
+}
+
+.theme-button {
+  @apply hover:bg-gray-100 active:bg-gray-200 rounded-full p-1;
 }
