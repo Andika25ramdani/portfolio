@@ -8,6 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 
   --app-gray-default: 255 255 255;
+  --app-gray-50: 249 250 251;
   --app-gray-100: 243 244 246;
   --app-gray-200: 229 231 235;
   --app-gray-600: 75 85 99;
@@ -27,6 +28,7 @@
   --background-end-rgb: 0 0 0;
 
   --app-gray-default: 3 7 18;
+  --app-gray-50: 17 24 39;
   --app-gray-100: 31 41 55;
   --app-gray-200: 55 65 81;
   --app-gray-600: 209 213 219;
@@ -64,8 +66,14 @@
 .header-drawer-menu {
   @apply flex list-none flex-col;
 }
+
 .header-drawer-menu-item {
   @apply py-3 px-6 hover:bg-gray-100 active:bg-gray-100;
+}
+
+/* Footer */
+.footer {
+  @apply w-full bg-gray-50 py-6 text-gray-600 text-sm text-center;
 }
 
 .theme-button {
