@@ -6,14 +6,14 @@ import Typography from "../typography";
 
 const SkillAndToolsSection = () => {
   return (
-    <Container className="bg-gray-50">
+    <Container>
       <div className="flex flex-col items-center gap-4">
         <h2 className="section-header-text">Skill and Tools</h2>
         <Typography
           variant="subtitle"
           className="max-w-xl text-center text-gray-600"
         >
-          The skills, tools and technologies I am used to work:
+          The skills, tools, and technologies I am familiar with:
         </Typography>
       </div>
 

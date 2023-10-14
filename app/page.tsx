@@ -109,7 +109,7 @@ export default function Home() {
           </p>
         </a>
       </div>
-      <ContactSection></ContactSection>
+      <ContactSection />
     </main>
   )
 }
