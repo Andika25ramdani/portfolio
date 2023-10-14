@@ -1,9 +1,11 @@
 import dmkLogo from '/public/comp/dmk.svg'
+import dmkDarkLogo from '/public/comp/dmk-dark.svg'
 import jumpaLogo from '/public/comp/jumpa.svg'
 import { StaticImageData } from 'next/image'
 
 export interface WorkExperient {
     logo: string | StaticImageData
+    logoDark?: string | StaticImageData
     logoAlt: string
     position: string
     startDate: Date
@@ -15,6 +17,7 @@ export interface WorkExperient {
 export const workExperients: WorkExperient[] = [
     {
         logo: dmkLogo,
+        logoDark: dmkDarkLogo,
         logoAlt: "Digital Muda Kreatif",
         position: "Software Developer",
         startDate: new Date(2020, 6),

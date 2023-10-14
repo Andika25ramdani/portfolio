@@ -1,8 +1,7 @@
-import Image from "next/image";
-
 import { technologies } from "@/constants/technologies";
 import Container from "../layouts/container";
 import Typography from "../typography";
+import ImageWrapper from "../image-wrapper";
 
 const SkillAndToolsSection = () => {
   return (
@@ -23,7 +22,14 @@ const SkillAndToolsSection = () => {
             className="flex flex-col justify-center items-center gap-3"
             key={index}
           >
-            <Image src={technology.logo} alt={technology.label} height={64} />
+            <ImageWrapper
+              src={technology.logo}
+              srcForDarkMode={technology.darkLogo}
+              alt={technology.label}
+              height={64}
+              className="transition-transform duration-300 md:hover:scale-110"
+            />
+
             <Typography variant={"body1"} className="text-gray-600 text-center">
               {technology.label}
             </Typography>

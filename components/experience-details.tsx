@@ -1,8 +1,7 @@
-import Image from "next/image";
-
 import { WorkExperient } from "@/constants/workExperients";
 import Card from "./layouts/card";
 import Typography from "./typography";
+import ImageWrapper from "./image-wrapper";
 
 const dateFormatOptions: Intl.DateTimeFormatOptions = {
   year: 'numeric',
@@ -11,6 +10,7 @@ const dateFormatOptions: Intl.DateTimeFormatOptions = {
 
 const ExperienceDetails = ({
   logo,
+  logoDark,
   logoAlt,
   position,
   currentlyWorkHere,
@@ -21,8 +21,9 @@ const ExperienceDetails = ({
   return (
     <Card className="mx-auto flex w-full max-w-4xl flex-col justify-between gap-4 p-8 md:flex-row md:gap-8">
       <div className="max-md:order-1 md:w-1/4">
-        <Image
+      <ImageWrapper
           src={logo}
+          srcForDarkMode={logoDark}
           alt={logoAlt}
           className="h-20 max-w-[140px]"
         />

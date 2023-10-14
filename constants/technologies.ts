@@ -13,6 +13,7 @@ import tailwindImage from '/public/technologies/tailwind.svg'
 import vscodeImage from '/public/technologies/vscode.svg'
 import vueImage from '/public/technologies/vue.svg'
 import wpImage from '/public/technologies/wordpress.svg'
+import wpDarkImage from '/public/technologies/wordpress-dark.svg'
 import xcodeImage from '/public/technologies/xcode.svg'
 
 export const technologies = [
@@ -24,7 +25,7 @@ export const technologies = [
     { label: 'JavaScript', logo: jsImage },
     { label: 'VueJS', logo: vueImage },
     { label: 'Laravel', logo: laravelImage },
-    { label: 'Wordpress', logo: wpImage },
+    { label: 'Wordpress', logo: wpImage, darkLogo: wpDarkImage },
     { label: 'Dart', logo: dartImage },
     { label: 'Flutter', logo: flutterImage },
     { label: 'Swift', logo: swiftImage },
