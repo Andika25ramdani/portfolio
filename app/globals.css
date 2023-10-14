@@ -38,6 +38,11 @@
   --app-accent-default: var(--app-accent-100);
 }
 
+/* Typography */
+.section-header-text {
+  @apply text-3xl font-bold capitalize text-center;
+}
+
 /* Header */
 .header {
   @apply sticky top-0 z-30 w-full border-b border-transparent bg-gray max-md:border-gray-100;
@@ -78,4 +83,16 @@
 
 .theme-button {
   @apply hover:bg-gray-100 active:bg-gray-200 rounded-full p-1;
+}
+
+/* Contact Section */
+.contact-section-link {
+  @apply flex items-center gap-1 sm:gap-4 md:gap-5;
+}
+
+.contact-section-link-item {
+  @apply hidden sm:flex items-center gap-4 md:gap-5;
+}
+.contact-section-link-item-icon {
+  @apply h-6 w-6 md:h-8 md:w-8;
 }
