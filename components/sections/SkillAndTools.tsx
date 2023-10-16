@@ -5,7 +5,7 @@ import ImageWrapper from "../image-wrapper";
 
 const SkillAndToolsSection = () => {
   return (
-    <Container>
+    <Container id="tech">
       <div className="flex flex-col items-center gap-4">
         <h2 className="section-header-text">Skill and Tools</h2>
         <Typography

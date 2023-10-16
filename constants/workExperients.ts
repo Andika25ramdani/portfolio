@@ -1,6 +1,7 @@
 import dmkLogo from '/public/comp/dmk.svg'
 import dmkDarkLogo from '/public/comp/dmk-dark.svg'
 import jumpaLogo from '/public/comp/jumpa.svg'
+import kebonJerukLogo from '/public/comp/bandung.svg'
 import { StaticImageData } from 'next/image'
 
 export interface WorkExperient {
@@ -15,6 +16,19 @@ export interface WorkExperient {
 }
 
 export const workExperients: WorkExperient[] = [
+    {
+        logo: kebonJerukLogo,
+        logoAlt: "Kelurahan Kebon Jeruk",
+        position: "IT Support (Intern)",
+        startDate: new Date(2019, 7),
+        endDate: new Date(2019, 9),
+        summary: [
+            'Worked for public instance client',
+            'Worked as a IT Support and Front-end Receiption',
+            'Worked with a variety of technologies, including HTML, CSS, CodeIgniter, and others.',
+            'Create product to increase productivity at work',
+        ]
+    },
     {
         logo: dmkLogo,
         logoDark: dmkDarkLogo,

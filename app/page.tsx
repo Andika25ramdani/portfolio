@@ -1,5 +1,6 @@
 import ContactSection from '@/components/sections/Contact'
 import FirstSection from '@/components/sections/FirstSection'
+import ProjectSection from '@/components/sections/ProjectSection'
 import SkillAndToolsSection from '@/components/sections/SkillAndTools'
 import WorkExperientsSection from '@/components/sections/WorkExperients'
 // import Image from 'next/image'
@@ -113,6 +114,7 @@ export default function Home() {
         </a>
       </div> */}
       <FirstSection />
+      <ProjectSection />
       <SkillAndToolsSection />
       <WorkExperientsSection />
       <ContactSection useSocialLink={true} />
