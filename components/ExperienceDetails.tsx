@@ -1,7 +1,7 @@
 import { WorkExperient } from "@/constants/workExperients";
-import Card from "./layouts/card";
-import Typography from "./typography";
-import ImageWrapper from "./image-wrapper";
+import Card from "./layouts/Card";
+import Typography from "./Typography";
+import ImageWrapper from "./ImageWrapper";
 
 const dateFormatOptions: Intl.DateTimeFormatOptions = {
   year: 'numeric',

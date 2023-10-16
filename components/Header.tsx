@@ -7,16 +7,16 @@ import {
   DrawerTrigger,
   DrawerContent,
   DrawerClose,
-} from "@/components/drawer";
+} from "@/components/Drawer";
 import { Menu, X } from "lucide-react";
 
-import IconButton from "@/components/icon-button";
+import IconButton from "@/components/IconButton";
 import Image from "next/image";
 import Link from "next/link";
 import ToggleTheme from "@/components/ToggleTheme";
 
-import useScroll from "@/hooks/use-scroll";
-import useWindowSize from "@/hooks/use-window-size";
+import useScroll from "@/hooks/useScroll";
+import useWindowSize from "@/hooks/useWindowSize";
 
 export default function Header() {
   const scrolled = useScroll(40);

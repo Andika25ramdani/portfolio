@@ -1,7 +1,7 @@
 import { technologies } from "@/constants/technologies";
-import Container from "../layouts/container";
-import Typography from "../typography";
-import ImageWrapper from "../image-wrapper";
+import Container from "../layouts/Container";
+import Typography from "../Typography";
+import ImageWrapper from "../ImageWrapper";
 
 const SkillAndToolsSection = () => {
   return (

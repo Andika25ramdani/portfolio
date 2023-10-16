@@ -1,7 +1,7 @@
 import { workExperients } from "@/constants/workExperients";
-import ExperienceDetails from "../experience-details";
-import Container from "../layouts/container";
-import Typography from "../typography";
+import ExperienceDetails from "../ExperienceDetails";
+import Container from "../layouts/Container";
+import Typography from "../Typography";
 
 const WorkExperientsSection = () => {
   return (

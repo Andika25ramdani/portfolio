@@ -5,11 +5,11 @@ import Link from "next/link";
 
 import { Copy, Mail, Phone } from "lucide-react";
 
-import Container from "../layouts/container";
-import Typography from "../typography";
-import IconButton from "../icon-button";
-import SocialIcons from "../social-icons";
-import useWindowSize from "@/hooks/use-window-size";
+import Container from "../layouts/Container";
+import Typography from "../Typography";
+import IconButton from "../IconButton";
+import SocialIcons from "../SocialIcons";
+import useWindowSize from "@/hooks/useWindowSize";
 
 import { CONTACT_INFO } from "@/constants/contactLinks";
 import { CONTACT_INFO_DATA } from "@/constants/contactInfoUID";
@@ -61,6 +61,7 @@ const ContactSection = ({ useSocialLink }: { useSocialLink?: boolean }) => {
             <div className="contact-section-link-item">
               <Typography variant="h2">{CONTACT_INFO_DATA.email}</Typography>
               <IconButton
+                aria-label="copy-email"
                 size={width && width < 768 ? "md" : "lg"}
                 onClick={() =>
                   handleCopyClick(CONTACT_INFO_DATA.email, "email")
@@ -81,6 +82,7 @@ const ContactSection = ({ useSocialLink }: { useSocialLink?: boolean }) => {
             <div className="contact-section-link-item">
               <Typography variant="h2">{CONTACT_INFO_DATA.phone}</Typography>
               <IconButton
+                aria-label="copy-phone"
                 size={width && width < 768 ? "md" : "lg"}
                 onClick={() =>
                   handleCopyClick(CONTACT_INFO_DATA.phone, "phone")

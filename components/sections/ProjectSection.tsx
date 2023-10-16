@@ -1,7 +1,9 @@
 import { PROJECTS } from "@/constants/projects";
-import Container from "../layouts/container";
-import ProjectDetails from "../project-details";
-import Typography from "../typography";
+import Container from "../layouts/Container";
+import ProjectDetails from "../ProjectDetails";
+import Typography from "../Typography";
+import Link from "next/link";
+import { headerMenuLinks } from "@/constants/headerMenuLinks";
 
 const ProjectSection = () => {
   return (
@@ -16,13 +18,20 @@ const ProjectSection = () => {
         </Typography>
       </div>
 
-      {PROJECTS?.filter(item => item.highlight).map((project, index) => (
+      {PROJECTS?.filter((item) => item.highlight).map((project, index) => (
         <ProjectDetails
           key={index}
           {...project}
           layoutType={index % 2 === 0 ? "default" : "reverse"}
         />
       ))}
+
+      <Link
+        href={headerMenuLinks[1].path}
+        className="text-button max-w-max mx-auto"
+      >
+        See More
+      </Link>
     </Container>
   );
 };

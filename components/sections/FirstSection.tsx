@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Container from "../layouts/container";
-import Typography from "../typography";
+import Container from "../layouts/Container";
+import Typography from "../Typography";
 import Link from "next/link";
 import { headerMenuLinks } from "@/constants/headerMenuLinks";
 
@@ -12,7 +12,7 @@ const FirstSection = () => {
         <div className="flex items-center justify-center md:order-last md:flex-grow md:justify-end">
           <div className="relative h-[300px] w-[280px] md:h-[360px] md:w-[320px]">
             <Image
-              src="/next.svg"
+              src="/docs/me.jpg"
               alt="Headshot of Andika"
               className="absolute z-10 h-[280px] w-[240px] border-8 border-gray max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px]"
               style={{ objectFit: "cover" }}
@@ -39,12 +39,19 @@ const FirstSection = () => {
             </Typography>
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex gap-2">
             <Link
               href={headerMenuLinks[1].path}
-              className="inline-flex items-center justify-center rounded-xl bg-gray-900 px-4 py-1.5 font-medium text-gray-50 transition-colors duration-200 hover:bg-gray-700 active:bg-gray-800"
+              className="text-button"
             >
               Explore My Work
+            </Link>
+            <Link
+              href="/docs/CV.pdf"
+              target="_blank"
+              className="text-button"
+            >
+              Download My CV
             </Link>
           </div>
         </div>

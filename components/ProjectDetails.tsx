@@ -1,9 +1,9 @@
 import { mergeClasses } from "@/lib/utils";
 import { Project as ProjectDetailsType } from "@/constants/projects";
-import Card from "./layouts/card";
+import Card from "./layouts/Card";
 import Image from "next/image";
-import Typography from "./typography";
-import Tag from "./layouts/tag";
+import Typography from "./Typography";
+import Tag from "./layouts/Tag";
 
 type ProjectDetailsProps = ProjectDetailsType & {
   layoutType: "default" | "reverse";

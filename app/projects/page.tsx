@@ -1,8 +1,8 @@
 import { NextPage } from "next";
 
-import Container from "@/components/layouts/container";
-import Typography from "@/components/typography";
-import ProjectDetails from "@/components/project-details";
+import Container from "@/components/layouts/Container";
+import Typography from "@/components/Typography";
+import ProjectDetails from "@/components/ProjectDetails";
 
 import { PROJECTS } from "@/constants/projects";
 
@@ -10,7 +10,7 @@ interface Props {}
 
 const About: NextPage<Props> = ({}) => {
   return (
-    <Container>
+    <Container className="bg-gray-50">
       <div className="flex flex-col items-center gap-4">
         <h2 className="section-header-text">Projects</h2>
         <Typography

@@ -1,6 +1,6 @@
 'use client';
 import { SOCIAL_INFO } from '@/constants/contactLinks';
-import IconButton from './icon-button';
+import IconButton from './IconButton';
 
 const SocialIcons = () => {
   return (
