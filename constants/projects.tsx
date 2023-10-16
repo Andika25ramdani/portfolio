@@ -130,17 +130,17 @@ export const PROJECTS: Project[] = [
     technologies: ["Dart", "Flutter", "Firebase"],
     created: new Date(2021, 2),
   },
-  {
-    title: "Virtual Verbal",
-    subtitle: "Games Blog & News Website Rebrand",
-    description:
-      'This app serves as a dynamic platform for gaming enthusiasts, offering a combination of a games blog, news updates, and real-time game database updates sourced from "IGDB" (Internet Game Database).',
-    url: "https://virtualverbal.com/",
-    images: [pgn1],
-    technologies: ["HTML", "CSS", "Bootstrap", "Laravel", "Firebase"],
-    created: new Date(2021, 1),
-    status: "progress",
-  },
+//   {
+//     title: "Virtual Verbal",
+//     subtitle: "Games Blog & News Website Rebrand",
+//     description:
+//       'This app serves as a dynamic platform for gaming enthusiasts, offering a combination of a games blog, news updates, and real-time game database updates sourced from "IGDB" (Internet Game Database).',
+//     url: "https://virtualverbal.com/",
+//     images: [pgn1],
+//     technologies: ["HTML", "CSS", "Bootstrap", "Laravel", "Firebase"],
+//     created: new Date(2021, 1),
+//     status: "progress",
+//   },
   {
     title: "Pakumara",
     subtitle: "Work Gallery Showcase",
