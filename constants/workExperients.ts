@@ -1,3 +1,5 @@
+import aestechLogo from '/public/comp/aestech.svg'
+import aestechDarkLogo from '/public/comp/aestech-dark.svg'
 import dmkLogo from '/public/comp/dmk.svg'
 import dmkDarkLogo from '/public/comp/dmk-dark.svg'
 import jumpaLogo from '/public/comp/jumpa.svg'
@@ -34,7 +36,7 @@ export const workExperients: WorkExperient[] = [
         logoDark: dmkDarkLogo,
         logoAlt: "Digital Muda Kreatif",
         position: "Software Developer",
-        startDate: new Date(2020, 6),
+        startDate: new Date(2020, 6, 20),
         endDate: new Date(2021, 11),
         summary: [
             'Worked for various clients',
@@ -46,10 +48,9 @@ export const workExperients: WorkExperient[] = [
         logo: jumpaLogo,
         logoAlt: "jumpa.id",
         position: "Front-end Developer",
-        startDate: new Date(2021, 11),
+        startDate: new Date(2021, 11, 16),
         endDate: new Date(2022, 11),
         summary: [
-            'Worked as a front-end developer',
             'Worked with a variety of technologies, including HTML, CSS, TailwindCSS, Bootstrap, and others.',
         ]
     },
@@ -58,11 +59,22 @@ export const workExperients: WorkExperient[] = [
         logoAlt: "jumpa.id",
         position: "iOS Developer",
         startDate: new Date(2022, 11),
-        currentlyWorkHere: true,
+        endDate: new Date(2023, 10),
         summary: [
             'Developed iOS Application with Swift, and SwiftUI',
             'Deployed iOS Application into Apple Store',
             'Maintened iOS Application',
+        ]
+    },
+    {
+        logo: aestechLogo,
+        logoDark: aestechDarkLogo,
+        logoAlt: "Aestech",
+        position: "Front-end Developer",
+        startDate: new Date(2023, 10, 24),
+        currentlyWorkHere: true,
+        summary: [
+            'Develop and maintain company product'
         ]
     },
 ]
