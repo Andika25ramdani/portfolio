@@ -31,11 +31,10 @@ const FirstSection = () => {
               {/* <span className="inline-block animate-waving-hand">👋</span> */}
             </Typography>
             <Typography>
-              I&lsquo;m a passionate and dedicated software developer who
-              thrives on challenges and constantly seeks out new opportunities
-              to grow. My journey as a developer has been marked by my
-              unwavering commitment to transforming ideas into beautiful,
-              intuitive, and user-friendly applications.
+              I turn complex design specifications into pixel-perfect, high
+              performance web and native interfaces. Focused on component
+              architecture, design token synchronization, micro-interaction, and
+              state-driven UI polish.
             </Typography>
           </div>
 
